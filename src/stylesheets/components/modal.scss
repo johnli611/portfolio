@@ -1,0 +1,134 @@
+.modal-background {
+  background-color: rgba($peer-purple, 0.88);
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+.modal-container {
+  display: inline-block;
+  margin-top: 80px;
+  position: relative;
+  text-align: left;
+}
+
+//.modal-well {
+//  background-color: white;
+//  border-radius: $global-border-radius;
+//  box-shadow: $global-box-shadow;
+//  min-height: 300px;
+//  padding-bottom: 25px;
+//  padding-top: 79px;
+//  position: relative;
+//  width: 720px;
+//}
+//
+//.modal-header {
+//  background-color: $peer-blue;
+//  border-radius: $global-border-radius $global-border-radius 0 0;
+//  color: white;
+//  font-size: em(24);
+//  font-weight: 600;
+//  margin-bottom: 0;
+//  margin-top: 0;
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  padding-bottom: 20px;
+//  padding-top: 30px;
+//  text-align: center;;
+//}
+
+.modal-content {
+  max-height: 640px;
+  overflow-y: scroll;
+  padding: 25px 35px;
+
+  .well-base {
+    margin-bottom: 25px;
+  }
+
+  .impression {
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+}
+//
+//.modal-controls {
+//  @include clearfix;
+//
+//  padding-right: 35px;
+//  padding-left: 35px;
+//}
+
+.modal-close {
+  background: none;
+  border: none;
+  opacity: 0.8;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+//.modal-success {
+//  background-color: rgba(0, 0, 0, 0.60);
+//  border-radius: $global-border-radius;
+//  color: white;
+//  margin-top: 150px;
+//  padding: 60px;
+//  text-align: center;
+//  width: 520px;
+//
+//  h2 {
+//    font-size: em(42);
+//  }
+//}
+
+$nav-button-width: 80px;
+$nav-button-margin: 100px;
+
+.modal-nav-button {
+  top: 225px;
+  position: absolute;
+  cursor: pointer;
+
+  button {
+    background-color: $tw-color-blue-medium;
+    width: $nav-button-width;
+    height: $nav-button-width;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &.disabled {
+      background-color: $tw-color-gray-medium;
+    }
+  }
+}
+
+.modal-back-button {
+  left: 0;
+  margin-left: - $nav-button-margin;
+}
+
+.modal-next-button {
+  right: 0;
+  margin-right: - $nav-button-margin;
+}
+
