@@ -17,12 +17,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba($peer-purple, 0.3);
-  color: white;
   display: flex;
+  color: white;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
+  &.overlay-text {
+    background-color: rgba($peer-purple, 0.3);
+  }
 
   &:hover {
     background-color: rgba($peer-purple, 0.65);

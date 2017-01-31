@@ -1,5 +1,6 @@
 import React, { Component }     from 'react';
 import Gallery                  from './gallery';
+import Map                      from './map';
 
 
 export default class Layout extends Component {
@@ -15,7 +16,11 @@ export default class Layout extends Component {
   render() {
     return (
       <div className="content-container">
-        <Gallery />
+        <Map />
+
+        <div style={{marginTop: '-25px'}}>
+          <Gallery />
+        </div>
       </div>
     );
   }
