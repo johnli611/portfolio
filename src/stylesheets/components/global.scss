@@ -87,6 +87,7 @@ $flacto-grey: #E8E8E8;
 // HTML Defaults
 //===============
 
+
 body {
   margin: 0;
   padding: 0;
@@ -107,12 +108,12 @@ td {
   vertical-align: middle;
 }
 
-
 body {
   margin: 0;
   padding: 0;
   position: relative;
   font-family: 'Open Sans', sans-serif;
+  background-color: $peer-purple; // TODO: change color
 }
 
 ul {
